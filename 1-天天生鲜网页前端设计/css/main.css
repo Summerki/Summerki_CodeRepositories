@@ -1,1 +1,123 @@
 /*专门用来存放index.html的样式的*/
+
+body{
+	font-family: "Microsoft Yahei";
+	color: #666;
+	font-size: 12px;
+}
+
+/*顶部状态条样式*/
+.header_con{
+	height: 29px;
+	background-color: #f7f7f7;
+	border-bottom: 1px  solid  #ddd;
+
+}
+
+.header{
+	width: 1200px;
+	height: 29px;
+	margin: 0 auto;
+}
+
+.welcome{
+	font: 12px/29px "Microsoft Yahei";
+	color: #666;
+}
+
+.user_login_link, .user_welcome, .user_shopping{
+	height: 29px;
+	line-height: 29px;
+
+}
+
+.user_login_link a, .user_shopping a{
+	color: #666;
+}
+
+.user_login_link a:hover, .user_shopping a:hover{
+	color: #f80;
+}
+
+.user_login_link span, .user_shopping span{
+	margin: 0 15px;
+	color:#cecece;
+}
+
+/*将“欢迎您，张山”藏起来*/ 
+.user_welcome{
+	display: none;
+}
+
+.user_welcome em{
+	color: #f80;
+}
+
+/*logo、搜索、购物车样式*/
+.logo_bar{
+	width: 1200px;
+	height: 115px;
+	/*background-color: gold;*/
+	margin: 0 auto;
+}
+
+.logo{
+	width: 151px;
+	height: 59px;
+	margin: 29px 0 0 17px;
+}
+
+.search{
+	width: 618px;
+	height: 38px;
+	border: 1px solid #37ab40;
+	margin: 34px 0 0 123px;
+	background: url(../images/icons.png) 8px 9px no-repeat;
+}
+
+/*注意outline的作用：使得input输入框在输入时没有边框！！！很有用*/
+.search .input_text{
+	width: 470px;
+	height: 38px;
+	border: 0;
+	margin-left: 37px;
+	outline: none;
+}
+
+.search .input_btn{
+	width: 100px;
+	height: 38px;
+	background-color: #37ab40;
+	border: 0px;
+	font: 14px/38px "Microsoft Yahei";
+	color: #fff;
+	/*cursor是设置鼠标形状的，我们想要用户在点击这个“搜索”按钮时鼠标会变成手型，就使用pointer*/
+	cursor: pointer;
+}
+
+.chart{
+	width: 200px;
+	height: 40px;
+	margin-top: 34px;
+}
+
+.chart a{
+	width: 158px;
+	height: 38px;
+	/*background-color: #f7f7f7;*/
+	border: 1px solid #ddd;
+	font: 14px/38px "Microsoft Yahei";
+	color: #37ab40;
+	text-indent: 56px;
+	background: url(../images/icons.png) 17px -43px no-repeat #f7f7f7;
+	/*注意icons.png是一张雪碧图，所以可以循环使用！！！非常有用的一点*/
+}
+
+.chart span{
+	width: 40px;
+	height: 40px;
+	background-color: #f80;
+	font: 18px/40px "Microsoft Yahei";
+	color: #fff;
+	text-align: center;
+}
