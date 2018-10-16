@@ -414,3 +414,65 @@ body{
 	color: #4e4e4e;
 	margin-top: 10px;
 }
+
+
+
+
+/*===========================================================================================*/
+/*以下为 登录页login.html 样式*/
+
+.login_header{
+	width: 953px;
+	height: 133px;
+	margin: 0 auto;
+}
+
+.login_header a{
+	display: block;
+	width: 193px;
+	height: 76px;
+	/*background-color: gold;	*/
+	margin-top: 28px;
+}
+
+.login_form_con{
+	/*width: 100%;*/
+	border-top: 1px solid #79a652;
+	border-bottom: 1px solid #79a652;
+	height: 480px;
+	background-color: #518e17;
+}
+
+.login_form{
+	width: 953px;
+	height: 482px;
+	margin: 0 auto;
+}
+
+.login_form .login_banner{
+	/*float: left;*/
+	margin: 92px 0 0 15px;	
+}
+
+.login_form .slogan{
+	color: #fff;
+	font-size: 30px;
+	width: 30px;
+	height: 300px;
+	text-align: center;
+	line-height: 36px;
+	margin: 87px 0 0 114px;
+}
+
+.login_form .form_input_con{
+	width: 368px;
+	height: 378px;
+	background-color: #fff;
+	border: 1px solid #c6c6c5;
+	margin-top: 50px;
+}
+
+.login_footer{
+	margin-top: 0px;
+	border-top: 0px;
+}
