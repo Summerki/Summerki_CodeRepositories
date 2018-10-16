@@ -164,7 +164,7 @@ body{
 	color: #f80;
 }
 
-
+/*左侧主菜单样式*/
 .center_con{
 	width: 1200px;
 	height: 270px;
@@ -221,4 +221,68 @@ body{
 
 .center_con .main_menu li .ice{
 	background-position: 33px -338px;
+}
+
+/*幻灯片样式 动态效果等学了JS再做*/
+.slide_con{
+	width: 760px;
+	height: 270px;
+	position: relative;
+}
+
+.prev, .next{
+	width: 15px;
+	height: 23px;
+	position: absolute;
+	left: 11px;
+	top: 122px;
+	cursor: pointer;
+	background: url(../images/icons.png) -1px -451px no-repeat;
+}
+
+.next{
+	left: 732px;
+	background: url(../images/icons.png) -1px -501px no-repeat;
+}
+
+/*一个元素水平居中：margin
+多个元素水平居中：行内块元素，text-align*/
+.points{
+	position: absolute;
+	width: 100%;
+	height: 11px;
+	left: 0;
+	bottom: 9px;
+	text-align: center;
+	font-size: 0px;
+}
+
+.points li{
+	width: 11px;
+	height: 11px;
+	display: inline-block;
+	background-color: #9f9f9f;
+	margin: 0 5px;
+	/*下面这个是设置圆角的，属于后面CSS3的内容*/
+	border-radius: 50%;
+}
+
+.points .active{
+	background-color: #cecece;
+}
+
+
+.adv{
+	width: 240px;
+	height: 270px;
+}
+
+.adv a{
+	float: left;
+	width: 240px;
+	height: 135px;
+}
+
+.adv a img{
+	display: block;
 }
