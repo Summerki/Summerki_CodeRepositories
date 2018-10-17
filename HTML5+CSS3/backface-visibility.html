@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style type="text/css">
+		
+		.box{
+			width: 300px;
+			height: 300px;
+			background-color: gold;
+			text-align: center;
+			line-height: 300px;
+			font-size: 50px;
+			margin: 50px auto 0;
+			transition: all 500ms ease;
+			transform-style: preserve-3d;
+			transform: perspective(800px) rotateY(0deg);
+			/*设置背面不可见*/
+			backface-visibility: hidden;
+		}
+
+		body:hover .box{
+			transform: perspective(800px) rotateY(180deg);
+		}
+
+	</style>
+</head>
+<body>
+	<div class="box">div元素</div>
+</body>
+</html>

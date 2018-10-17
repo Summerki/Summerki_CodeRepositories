@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style type="text/css">
+		/*
+		权重值：10000 + 1
+		.div{
+			color: red!important;
+		}
+		*/
+
+		
+
+		/*
+		id选择器：权重值100
+		#box{
+			color: blue;
+		}
+		*/
+
+		body .con{
+			color: green;
+		}
+
+		#body1 .con2{
+			color: greenyellow;
+		}
+	</style>
+</head>
+<body id="body1">
+	行间样式 style="color: pink" 权重值：1000
+	<div id="box" style="color: pink" class="con con2">这是一个div元素</div>
+</body>
+</html>

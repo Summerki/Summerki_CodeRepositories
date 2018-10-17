@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>css3 透明度</title>
+	<style type="text/css">
+		body{
+			background-color: cyan;
+		}
+
+		.box{
+			width: 200px;
+			height: 200px;
+			background: url(images/location_bg.jpg);
+			margin: 50px auto 0;
+			border: 2px solid #000;
+			border-radius: 50%;
+			/*使用opacity设置透明度,0.5代表50%*/
+			opacity: 0.3;
+			/*下面这句话是针对非标准浏览器的，为了兼容opacity,比如IE。。。*/
+			filter: alpha(opacity=30);
+			text-align: center;
+			line-height: 200px;
+		}
+
+		.box2{
+			width: 200px;
+			height: 200px;
+			margin: 50px auto 0;
+			border: 2px solid rgba(0, 0, 0, 0.3);
+			border-radius: 50%;
+			text-align: center;
+			line-height: 200px;
+			/*任何能够设置颜色的地方都可以用rgba来代替*/
+			/*rgba比opacity更好用，rgba可以设置某一个部分的透明度*/
+			/*background-color: yellow;*/
+			background-color: rgba(255, 255, 0, 0.3);
+		}
+	</style>
+</head>
+<body>
+	<div class="box">床前明月光</div>
+	<div class="box2">床前明月光</div>
+</body>
+</html>
