@@ -1,0 +1,44 @@
+body{
+	font-family: "Microsoft Yahei";
+}
+
+/*下面这样写是一个小技巧，采用绝对定位，将整个屏幕空间都属于main_wrap*/
+.main_wrap{
+	position: absolute;
+	left: 0;
+	right: 0;
+	top: 0;
+	bottom: 0;
+}
+
+.header{
+	height: 50px;
+	background-color: #37ab40;
+	position: relative;
+}
+
+
+.center_wrap{
+	position: absolute;
+	left: 0;
+	right: 0;
+	top: 50px;
+	bottom: 50px;
+	background-color: #efefef;
+	/*这个地方是你平常浏览网页出现滑动条的关键，
+	如何保障你在滑动手机时顶栏和低栏都在，只有中间部分在滑动，就可以用这种结构；*/
+	overflow-x: hidden;
+	overflow-y: auto;
+}
+
+
+
+.footer{
+	position: absolute;
+	width: 100%;
+	height: 50px;
+	background-color: #fff;
+	left: 0;
+	bottom: 0;
+}
+
