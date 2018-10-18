@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style type="text/css">
+			
+		.box{
+			width: 200px;
+			height: 200px;
+			border: 1px solid #000;
+			margin: 50px auto 0;
+			background: url(images/apple.png) no-repeat;
+			
+			/*将背景图强制设为500x500*/
+			/*background-size: 500px 500px;*/
+
+			/*background-size: 200px 200px;*/
+
+			background-size: 100% 100%;
+		}
+
+		.box2{
+			width: 500px;
+			height: 500px;
+			border: 1px solid #000;
+			margin: 50px auto 0;
+			background: url(images/apple.png) no-repeat;
+
+			/*background-size: cover;*/
+
+			background-size: contain;
+		}
+
+	</style>
+</head>
+<body>
+	<div class="box"></div>
+	<div class="box2"></div>
+</body>
+</html>
