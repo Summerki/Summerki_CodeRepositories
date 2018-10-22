@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<script type="text/javascript">
+		window.onload = function(){
+			var aLi = document.getElementsByTagName('li');
+			alert(aLi); // 输出 HTMLCollection
+
+			// 注意：这样直接输出aLi.length会将下面两个ul里的li都算进来
+			alert(aLi.length); // 输出 11
+			aLi[0].style.backgroundColor = 'gold';
+
+			// 只获取第一个ul里的li的个数的方法
+			var oList = document.getElementById('list01');
+			var aLi_1 = oList.getElementsByTagName('li');
+			alert(aLi_1.length); // 输出 8
+		}
+	</script>
+</head>
+<body>
+	<ul id="list01">
+		<li>1</li>
+		<li>2</li>
+		<li>3</li>
+		<li>4</li>
+		<li>5</li>
+		<li>6</li>
+		<li>7</li>
+		<li>8</li>
+	</ul>
+
+	<ul id="list02">
+		<li>9</li>
+		<li>10</li>
+		<li>11</li>
+	</ul>
+</body>
+</html>
